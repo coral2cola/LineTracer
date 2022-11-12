@@ -1,4 +1,5 @@
-##  Explanation of your path-finding algorithms
+# Line Tracer (TI RSLK MAX)
+##  Path-finding Algorithms
 
 The path-finding algorithim implemented in this project is followed by flag value status in order to decide which operation will be done in each precise moment. 
 
@@ -26,7 +27,7 @@ On the other hand if we look at the value of the flag and it has a value of 1, w
 
 
 
-## Explanation of your motor control algorithms
+## Motor Control Algorithms
 
 We operated the motor using a Timer interrupt. It is a method of generating PWM signals using a timer. As the PWM pin of the motor is connected to the 3 and 4 submodules of timer0, values of Duty 3 and 4 are passed to motors 3 and 4 during the PWM initialization process. The `leftDuty` and `rightDuty` values are input as the `Move()` function, and the `rightDuty` value is handed over to `PWM_Duty3()` and the `leftDuty` value is handed over to `PWM_Duty4()`.
 
@@ -72,7 +73,7 @@ The correction value was set in preparation for an error that occurs when the ro
 
 
 
-## Explanation of the entire logic of the program
+## Entire Logic of the Program
 
 ``` c
 int stack[100];		// stack
